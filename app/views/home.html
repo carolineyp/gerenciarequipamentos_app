@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Principal</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="home.js" defer></script>
+</head>
+<body>
+  <div class="container" id="homeContainer">
+    <h2>Gestão de Equipamentos de TI</h2>
+    <input type="text" id="equipNome" placeholder="Nome do equipamento">
+    <input type="text" id="equipInfo" placeholder="Informações adicionais">
+    <button onclick="addEquip()">Adicionar</button>
+
+    <table id="equipTable">
+      <thead>
+        <tr>
+          <th>Equipamento</th>
+          <th>Informações</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <a href="login.html">Sair</a>
+  </div>
+</body>
+</html>
