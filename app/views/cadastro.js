@@ -11,6 +11,6 @@ function register() {
     }
 // Aqui poderia validar com backend. Por enquanto libera acesso:
     alert("Usuário cadastrado com sucesso!");// Mensagem de sucesso
-    window.location.href = "login.html"; // Redireciona para a página de login
+    window.location.href = "saudaçoes.html"; // Redireciona para a página de saudações
   }
   

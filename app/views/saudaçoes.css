@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://picsum.photos/1600/900') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  .container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  
+  a {
+    display: block;
+    margin-top: 10px;
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
