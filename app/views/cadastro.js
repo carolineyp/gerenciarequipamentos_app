@@ -1,16 +1,18 @@
-//cadastro.js
-function register() {
-// Obtém os valores dos campos
+  function register() {
     const user = document.getElementById('newUser').value;
     const email = document.getElementById('newEmail').value;
     const pass = document.getElementById('newPass').value;
-// Verifica se os campos estão preenchidos
-    if (user === "" || email === "" || pass === "") { 
-      alert("Preencha todos os campos!");// Alerta se algum campo estiver vazio
-      return;// Sai da função se algum campo estiver vazio
+  
+    if (user === "" || email === "" || pass === "") {
+      alert("Preencha todos os campos!");
+      return;
     }
-// Aqui poderia validar com backend. Por enquanto libera acesso:
-    alert("Usuário cadastrado com sucesso!");// Mensagem de sucesso
-    window.location.href = "saudaçoes.html"; // Redireciona para a página de saudações
+  
+    // Salva o nome no localStorage
+    localStorage.setItem("nmuser", user);
+  // Mensagem de sucesso
+    alert("Usuário cadastrado com sucesso!");
+    // Redireciona para a tela de boas-vindas
+    window.location.href = "saudaçoes.html";
   }
   

@@ -1,6 +1,7 @@
-function mudarNome(){
-    
-    let nmUser = localStorage.getItem('newUser'); 
-    document.getElementById('nmuser').innerHTML = nmUser;
-    return nmUser;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const nmUser = localStorage.getItem("nmuser");
+    if (nmUser) {
+      document.getElementById("nmuser").innerText = "ola " + nmUser;
+    }
+  });
+  
